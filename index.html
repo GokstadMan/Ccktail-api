@@ -13,9 +13,22 @@
         </nav> 
     </header>
     <main>
-        <div class="query-container h-[20rem] w-full bg-gray-300 flex flex-col justify-center items-center">
+        <div class="query-wrap h-[20rem] w-full bg-gray-300 flex flex-col justify-center items-center">
             <h2 class="text-xl text-gray-700 p-4">What are you looking for?</h2>
             <input type="text" placeholder="Drink..">
+        </div>
+        <div class="API-results grid grid-cols-2 gap-4 m-6" >
+            <div class="image">
+                <img src="" alt="pic from API" class="w-full h-[20rem]">
+            </div>
+            <div class="search-results pl-4">
+                <ul>
+                    <li class="p-4 text-xl">Name:</li>
+                    <li class="p-4 text-xl">Category:</li>
+                    <li class="p-4 text-xl">Acoholic:</li>
+                    <li class="p-4 text-xl">How to make:</li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer>

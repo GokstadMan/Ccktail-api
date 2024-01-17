@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-    <title>Food Api</title>
+    <title>Food API</title>
 </head>
 <body>
     <header>
@@ -15,8 +15,8 @@
     <main>
         <div class="query-wrap h-[20rem] w-full bg-gray-300 flex flex-col justify-center items-center">
             <h2 class="text-xl text-gray-700 p-4">What are you looking for?</h2>
-            <input class="px-4" type="text" placeholder="Drinkname goes here...">
-            <button class="bg-rose-500 text-white text-xl px-16 py-2 mt-2">Find drink!</button>
+            <input id="user-input" class="px-4" type="text" placeholder="Drinkname goes here...">
+            <button id="search-btn" class="bg-rose-500 text-white text-xl px-20 py-2 mt-2">Find it!</button>
         </div>
         <div class="API-results grid grid-cols-2 gap-4 m-6" >
             <div class="image">
@@ -24,10 +24,10 @@
             </div>
             <div class="search-results pl-4">
                 <ul>
-                    <li class="p-4 text-xl">Name:</li>
-                    <li class="p-4 text-xl">Category:</li>
-                    <li class="p-4 text-xl">Acoholic:</li>
-                    <li class="p-4 text-xl">How to make:</li>
+                    <li id="api-name" class="p-4 text-xl">Name:</li>
+                    <li id="api-category" class="p-4 text-xl">Category:</li>
+                    <li id="api-alcoholic" class="p-4 text-xl">Acoholic:</li>
+                    <li id="api-instr" class="p-4 text-xl">How to make:</li>
                 </ul>
             </div>
         </div>

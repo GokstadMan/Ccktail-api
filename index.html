@@ -15,12 +15,12 @@
     <main>
         <div class="query-wrap h-[20rem] w-full bg-gray-300 flex flex-col justify-center items-center">
             <h2 class="text-xl text-gray-700 p-4">What are you looking for?</h2>
-            <input id="user-input" class="px-4" type="text" placeholder="Drinkname goes here...">
-            <button id="search-btn" class="bg-rose-500 text-white text-xl px-20 py-2 mt-2">Find it!</button>
+            <input type="text" id="user-input" class="px-8" placeholder="Search...">
+            <button id="search-btn" class="bg-rose-500 text-white text-xl px-20 py-2 mt-2">Let's drink!</button>
         </div>
         <div class="API-results grid grid-cols-2 gap-4 m-6" >
             <div class="image">
-                <img src="" alt="pic from API" class="w-full h-[20rem]">
+                <img id="api-image" src="" class="w-full h-[20rem]">
             </div>
             <div class="search-results pl-4">
                 <ul>
